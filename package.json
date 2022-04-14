@@ -9,11 +9,18 @@
   },
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0",
+    "node-loader": "^2.0.0",
+    "node-sass": "^7.0.1",
+    "sass": "^1.50.0",
+    "sass-loader": "^12.6.0",
     "vite": "^2.9.2"
   },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "dark-mode-switch": "^1.0.0"
   }
 }

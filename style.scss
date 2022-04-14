@@ -1,0 +1,147 @@
+:root {
+  --bg-color: #212529;
+  --bg-light: #232535;
+  --font-color: #c5cddb;
+  --font-light: #ffffff;
+}
+
+.lightMode {
+  --bg-color: #e8e6dc;
+  --bg-light: #dcdaca;
+  --font-color: #3d3d3d;
+  --font-light: #202020;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--font-light);
+  background-color: var(--bg-color);
+  transition: all 500ms;
+}
+
+.nav-links #toggle {
+  pointer: cursor !important;
+}
+.btn:hover {
+  color: var(--bg-color);
+  background-color: var(--font-light);
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--font-color);
+}
+.title-container {
+  display: flex;
+}
+.socials__icon {
+  font-size: 2rem;
+  color: var(font-color);
+}
+.navigation-socials {
+  float: right;
+  margin-right: 10px;
+}
+.socials__icon {
+  margin: 0 2px 0 2px;
+}
+
+.greeting-title {
+  font-size: 60pt;
+  font-weight: bolder;
+  background: linear-gradient(225deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 5s ease infinite;
+  -webkit-animation: gradient 5s ease infinite;
+  -moz-animation: Agradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Navbar */
+nav {
+  background-color: var(--primary);
+}
+nav .container {
+  display: block;
+  padding: 2rem 1.5rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+nav .nav-links .nav-item {
+  list-style: none;
+  display: inline;
+  border-radius: 0.25rem;
+  line-height: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  margin: 1rem;
+  transition: all 250ms;
+  cursor: pointer;
+}
+nav .nav-links .active {
+  font-weight: 700;
+  color: var(--link-btn);
+}
+nav .nav-links .nav-item:hover {
+  background-color: var(--bg-light);
+}
+a {
+  text-decoration: none;
+  color: var(--link-btn);
+}
+/* End Navbar */
